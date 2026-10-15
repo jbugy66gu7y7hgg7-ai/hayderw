@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary-color: #1d4ed8;
+    --secondary-color: #0b192c;
+    --bg-color: #ffffff;
+    --text-color: #0f172a;
+    --button-color: #1d4ed8;
+    --border-color: #93c5fd;
+    --header-color: #091424;
+    --card-color: #ffffff;
+    --accent-gold: #eab308;
+    --accent-gold-soft: rgba(234, 179, 8, 0.18);
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-family: 'Cairo', system-ui, -apple-system, sans-serif;
+    scroll-behavior: smooth;
+    background-color: var(--bg-color, #ffffff);
+    color: var(--text-color, #0f172a);
+  }
+
+  body {
+    font-family: 'Cairo', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-color, #ffffff);
+    color: var(--text-color, #0f172a);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cairo', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Centralized Dynamic CSS Color Utilities */
+.bg-site-primary { background-color: var(--primary-color); }
+.bg-site-secondary { background-color: var(--secondary-color); }
+.bg-site-body { background-color: var(--bg-color); }
+.bg-site-header { background-color: var(--header-color); }
+.bg-site-card { background-color: var(--card-color); }
+.bg-site-btn { background-color: var(--button-color); }
+
+.text-site-primary { color: var(--primary-color); }
+.text-site-secondary { color: var(--secondary-color); }
+.text-site-body { color: var(--text-color); }
+.text-site-gold { color: var(--accent-gold); }
+
+.border-site-primary { border-color: var(--primary-color); }
+.border-site-secondary { border-color: var(--secondary-color); }
+.border-site-border { border-color: var(--border-color); }
+.border-site-gold { border-color: var(--accent-gold); }
+
+/* Custom Blue and Gold Gradients */
+.gold-gradient {
+  background: linear-gradient(135deg, #fef08a 0%, #eab308 50%, #ca8a04 100%);
+}
+
+.blue-header-gradient {
+  background: linear-gradient(180deg, var(--header-color, #091424) 0%, var(--secondary-color, #0b192c) 100%);
+}
+
+.blue-card {
+  background-color: var(--card-color, #ffffff);
+  border: 1px solid var(--border-color, #bfdbfe);
+  box-shadow: 0 10px 25px -5px rgba(29, 78, 216, 0.08);
+}
+
+.blue-card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.blue-card-hover:hover {
+  border-color: var(--primary-color, #2563eb);
+  box-shadow: 0 12px 30px -8px rgba(29, 78, 216, 0.18);
+  transform: translateY(-2px);
+}
+
+/* Certificate border detailing */
+.cert-border {
+  border: 8px double var(--accent-gold, #eab308);
+  box-shadow: 0 0 0 2px var(--primary-color, #1d4ed8), inset 0 0 20px rgba(234, 179, 8, 0.15);
+}
+
+/* Print styles for certificate */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-certificate, #printable-certificate * {
+    visibility: visible;
+  }
+  #printable-certificate {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    background: white !important;
+    color: #0f172a !important;
+  }
+}

@@ -1,0 +1,1 @@
+export { specialties } from './specialtiesData';

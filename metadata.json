@@ -1,0 +1,6 @@
+{
+  "name": "أكاديمية الأفق",
+  "description": "الموقع الرسمي لأكاديمية الأفق لمنح شهادات الخبرة الدولية المعتمدة ونظام التحقق الإلكتروني الذكي برقم الشهادة ورمز QR",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
