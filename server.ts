@@ -13,6 +13,28 @@ app.use(express.urlencoded({ extended: true, limit: "50mb" }));
 // Serve static assets from public directory
 app.use(express.static(path.join(process.cwd(), "public")));
 
+// GitHub Pages Single-File Download and Raw View Endpoints
+app.get("/download-github-pages-index.html", (_req, res) => {
+  const filePath = path.join(process.cwd(), "github_pages_single_file", "index.html");
+  if (fs.existsSync(filePath)) {
+    res.setHeader("Content-Disposition", 'attachment; filename="index.html"');
+    res.setHeader("Content-Type", "text/html; charset=utf-8");
+    res.sendFile(filePath);
+  } else {
+    res.status(404).send("File not found");
+  }
+});
+
+app.get("/github-pages-code", (_req, res) => {
+  const filePath = path.join(process.cwd(), "github_pages_single_file", "index.html");
+  if (fs.existsSync(filePath)) {
+    res.setHeader("Content-Type", "text/plain; charset=utf-8");
+    res.sendFile(filePath);
+  } else {
+    res.status(404).send("File not found");
+  }
+});
+
 const DB_PATH = path.join(process.cwd(), "data", "database.json");
 
 // Ensure DB directory exists
