@@ -253,7 +253,7 @@ export const VerifyView: React.FC<VerifyViewProps> = ({
                   }}
                 >
                   <span className="text-[11px] text-blue-200 block">إجمالي السجلات:</span>
-                  <span className="text-xl font-bold font-mono text-amber-300">
+                  <span className="text-xl font-bold font-mono text-white">
                     {masterAdminData.certificates.length} شهادة
                   </span>
                 </div>

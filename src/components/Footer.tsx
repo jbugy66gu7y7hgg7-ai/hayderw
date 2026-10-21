@@ -97,7 +97,7 @@ export const Footer: React.FC<FooterProps> = ({
           {/* Quick Navigation column */}
           <div className="md:col-span-4 flex flex-col justify-between space-y-4">
             <div>
-              <h4 className="text-sm font-bold text-amber-400 uppercase tracking-wider mb-3">
+              <h4 className="text-sm font-bold text-white uppercase tracking-wider mb-3">
                 روابط سريعة
               </h4>
               <ul className="space-y-2 text-sm text-slate-300">

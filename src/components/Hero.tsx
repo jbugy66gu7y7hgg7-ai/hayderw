@@ -93,7 +93,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate, onQuickVerify }) => {
             {/* Top Badge */}
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-950/80 border border-blue-400/40 backdrop-blur-md shadow-sm">
               <Award className="w-4 h-4 text-amber-400 shrink-0" />
-              <span className="text-amber-300 text-xs sm:text-sm font-bold tracking-wide">
+              <span className="text-white text-xs sm:text-sm font-bold tracking-wide">
                 امتلك شهادة الخبرة الدولية المعتمدة
               </span>
             </div>
@@ -101,7 +101,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate, onQuickVerify }) => {
             {/* Main Title */}
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.25] tracking-tight drop-shadow-md">
               مع أكاديمية <span className="text-blue-300">الأفق</span> <br className="hidden sm:inline" />
-              <span className="text-amber-400 drop-shadow-sm">في ماليزيا</span>
+              <span className="text-white drop-shadow-sm">في ماليزيا</span>
             </h1>
 
             {/* Subtext description */}
@@ -203,7 +203,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate, onQuickVerify }) => {
                 أكاديمية <span className="text-blue-300">الأفق</span>
               </h2>
               <p className="text-xs sm:text-sm text-slate-200/90 font-medium mt-1">
-                للتدريب والاستشارات <span className="text-amber-400">•</span> ماليزيا
+                للتدريب والاستشارات <span className="text-white">•</span> ماليزيا
               </p>
               <p className="text-[11px] text-blue-200/80 mt-0.5 font-normal">
                 الوكالة الأولى المعتمدة لمنح شهادات الخبرة الدولية
@@ -212,15 +212,15 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate, onQuickVerify }) => {
               {/* Trust badges */}
               <div className="grid grid-cols-3 gap-2 pt-4 mt-4 border-t border-white/10">
                 <div className="p-2 rounded-lg bg-black/20 border border-white/5">
-                  <span className="block text-amber-400 font-bold text-xs">دولي</span>
+                  <span className="block text-white font-bold text-xs">دولي</span>
                   <span className="text-[10px] text-slate-300">توثيق معتمد</span>
                 </div>
                 <div className="p-2 rounded-lg bg-black/20 border border-white/5">
-                  <span className="block text-amber-400 font-bold text-xs">QR كود</span>
+                  <span className="block text-white font-bold text-xs">QR كود</span>
                   <span className="text-[10px] text-slate-300">تحقق فوري</span>
                 </div>
                 <div className="p-2 rounded-lg bg-black/20 border border-white/5">
-                  <span className="block text-amber-400 font-bold text-xs">24-48 ساعة</span>
+                  <span className="block text-white font-bold text-xs">24-48 ساعة</span>
                   <span className="text-[10px] text-slate-300">إصدار سريع</span>
                 </div>
               </div>

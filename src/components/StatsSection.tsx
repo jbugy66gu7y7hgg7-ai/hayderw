@@ -31,7 +31,7 @@ export const StatsSection: React.FC<StatsSectionProps> = ({ stats }) => {
           
           {/* Stat 1: 2008 سنه تاسست */}
           <div className="flex flex-col items-center">
-            <h3 className="text-3xl sm:text-5xl lg:text-6xl font-black text-amber-300 tracking-tight font-mono drop-shadow">
+            <h3 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight font-mono drop-shadow">
               {years}
             </h3>
             <span className="text-xs sm:text-base font-semibold text-blue-100 mt-2 leading-snug">
@@ -41,7 +41,7 @@ export const StatsSection: React.FC<StatsSectionProps> = ({ stats }) => {
 
           {/* Stat 2: 750 شهادة ممنوحه */}
           <div className="flex flex-col items-center border-x border-blue-300/30 px-4 sm:px-8 w-full">
-            <h3 className="text-3xl sm:text-5xl lg:text-6xl font-black text-amber-300 tracking-tight font-mono drop-shadow">
+            <h3 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight font-mono drop-shadow">
               {certificates}
             </h3>
             <span className="text-xs sm:text-base font-semibold text-blue-100 mt-2 leading-snug">
@@ -51,7 +51,7 @@ export const StatsSection: React.FC<StatsSectionProps> = ({ stats }) => {
 
           {/* Stat 3: 35+ تخصص اكاديمي */}
           <div className="flex flex-col items-center">
-            <h3 className="text-3xl sm:text-5xl lg:text-6xl font-black text-amber-300 tracking-tight font-mono drop-shadow">
+            <h3 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight font-mono drop-shadow">
               {specialties}+
             </h3>
             <span className="text-xs sm:text-base font-semibold text-blue-100 mt-2 leading-snug">

@@ -88,7 +88,7 @@ export const FeaturesSection: React.FC = () => {
                   </div>
 
                   {/* Title & Desc */}
-                  <h3 className="text-xl font-bold text-white mb-3 group-hover:text-amber-300 transition">
+                  <h3 className="text-xl font-bold text-white mb-3 group-hover:text-white transition">
                     {feat.title}
                   </h3>
                   <p className="text-slate-300 text-sm leading-relaxed mb-4">
@@ -96,7 +96,7 @@ export const FeaturesSection: React.FC = () => {
                   </p>
                 </div>
 
-                <div className="pt-4 border-t border-[#065f46]/40 flex items-center justify-between text-xs text-amber-400 font-semibold">
+                <div className="pt-4 border-t border-[#065f46]/40 flex items-center justify-between text-xs text-white font-semibold">
                   <span>{feat.highlight}</span>
                   <CheckCircle2 className="w-4 h-4 text-emerald-400" />
                 </div>

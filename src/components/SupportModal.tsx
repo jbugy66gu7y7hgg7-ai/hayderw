@@ -139,7 +139,7 @@ export const SupportModal: React.FC<SupportModalProps> = ({
 
         {/* Common Questions */}
         <div className="space-y-3 pt-2">
-          <h4 className="text-xs font-bold text-amber-400 uppercase tracking-wider">
+          <h4 className="text-xs font-bold text-white uppercase tracking-wider">
             الأسئلة الأكثر شيوعاً
           </h4>
 
@@ -168,7 +168,7 @@ export const SupportModal: React.FC<SupportModalProps> = ({
           </div>
           <button
             onClick={onClose}
-            className="text-amber-400 hover:underline font-semibold"
+            className="text-white hover:underline font-semibold"
           >
             إغلاق
           </button>

@@ -168,7 +168,7 @@ export const ApplyView: React.FC<ApplyViewProps> = ({
           </button>
         )}
 
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs font-semibold">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-400/30 text-white text-xs font-semibold">
           <Sparkles className="w-4 h-4 text-amber-400" />
           <span>استمارة التقديم الإلكترونية</span>
         </div>
@@ -202,7 +202,7 @@ export const ApplyView: React.FC<ApplyViewProps> = ({
               تم تسجيل طلبك وحفظه بنجاح في قاعدة بيانات الأكاديمية تحت رقم المراجعة:
             </p>
             <div 
-              className="inline-block px-5 py-2 rounded-xl font-mono text-xl font-bold text-amber-300 mt-2"
+              className="inline-block px-5 py-2 rounded-xl font-mono text-xl font-bold text-white mt-2"
               style={{ 
                 backgroundColor: 'var(--secondary-color, #0b192c)',
                 border: '1px solid var(--border-color, #93c5fd)'
@@ -221,7 +221,7 @@ export const ApplyView: React.FC<ApplyViewProps> = ({
                 border: '1px solid rgba(147, 197, 253, 0.3)'
               }}
             >
-              <span className="font-bold text-amber-400 block">1. التدقيق والتقييم</span>
+              <span className="font-bold text-white block">1. التدقيق والتقييم</span>
               <p className="text-blue-200/70">تقوم اللجنة بمطابقة الخبرات مع معايير الشهادة.</p>
             </div>
             <div 
@@ -231,7 +231,7 @@ export const ApplyView: React.FC<ApplyViewProps> = ({
                 border: '1px solid rgba(147, 197, 253, 0.3)'
               }}
             >
-              <span className="font-bold text-amber-400 block">2. التواصل عبر واتساب</span>
+              <span className="font-bold text-white block">2. التواصل عبر واتساب</span>
               <p className="text-blue-200/70">سيتم التواصل معك على الرقم المدخل لتأكيد الاعتماد.</p>
             </div>
             <div 
@@ -241,7 +241,7 @@ export const ApplyView: React.FC<ApplyViewProps> = ({
                 border: '1px solid rgba(147, 197, 253, 0.3)'
               }}
             >
-              <span className="font-bold text-amber-400 block">3. إصدار الشهادة والـ QR</span>
+              <span className="font-bold text-white block">3. إصدار الشهادة والـ QR</span>
               <p className="text-blue-200/70">تصلك نسختك الرقمية الموثقة مع إمكانية التحقق الفوري.</p>
             </div>
           </div>

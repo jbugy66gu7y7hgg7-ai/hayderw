@@ -265,7 +265,7 @@ export const VerifySection: React.FC<VerifySectionProps> = ({
                     <span>رمز تحقق رئيسي معتمد وموثق</span>
                   </div>
                   <h3 className="text-xl sm:text-2xl font-black text-white">
-                    نتائج التحقق للرمز الرئيسي: <span className="text-amber-400 font-mono">{masterData.code}</span>
+                    نتائج التحقق للرمز الرئيسي: <span className="text-white font-mono">{masterData.code}</span>
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-300">
                     تم توثيق الرمز بنجاح وعرض الشهادات الـ ({masterData.certificates.length}) المعتمدة المرتبطة به
@@ -281,7 +281,7 @@ export const VerifySection: React.FC<VerifySectionProps> = ({
                     }}
                   >
                     <span className="text-[11px] text-blue-200 block">إجمالي الشهادات:</span>
-                    <span className="text-xl font-bold font-mono text-amber-300">
+                    <span className="text-xl font-bold font-mono text-white">
                       {masterData.certificates.length} شهادة
                     </span>
                   </div>
